@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class zombieScript : MonoBehaviour
 {
-    public GameObject zombiePrefab; // Prefab die spawner moet zijn - beste optie is empty prefab
-    public float spawnRadius = 10f; // Hoe hard de zombies uit elkaar spawnen
+    // Prefab die spawner moet zijn - beste optie is empty prefab
+    public GameObject zombiePrefab;
+    // Hoe hard de zombies uit elkaar spawnen
+    public float spawnRadius = 10f;
 
-    private int waveNumber = 0; // huidige wave nummer
-    private bool spawningWave = false; // checkt of wave is gespawned
-    private int numZombiesSpawned = 0; // aantal zombies die zijn gespawned in de huidige wave
-    private int numZombiesDestroyed = 0; // aantal zombies die zijn vernietigd in de huidige wave
-    private int numZombiesPerWave = 0; // aantal zombies dat in de huidige wave gespawned moet worden
+    // huidige wave nummer
+    private int waveNumber = 0;
+    // checkt of wave is gespawned
+    private bool spawningWave = false;
+    // aantal zombies die zijn gespawned in de huidige wave
+    private int numZombiesSpawned = 0;
+    // aantal zombies die zijn vernietigd in de huidige wave
+    private int numZombiesDestroyed = 0;
+    // aantal zombies dat in de huidige wave gespawned moet worden
+    private int numZombiesPerWave = 0; 
 
+    // zombiewave is voorbij en zombies zijn dood
     void Update()
     {
         if (!spawningWave && numZombiesDestroyed == numZombiesSpawned)
@@ -31,7 +39,7 @@ public class zombieScript : MonoBehaviour
         // rekent uit hoeveel zombies er per wave moetten spawnen
         numZombiesPerWave = (int)Mathf.Pow(2, waveNumber);
 
-        // Spawn zombies within a radius
+        // Spawn zombie in een bepaalde radius
         for (int i = 0; i < numZombiesPerWave; i++)
         {
             Vector3 spawnPos = transform.position + Random.insideUnitSphere * spawnRadius;
@@ -42,12 +50,12 @@ public class zombieScript : MonoBehaviour
         }
     }
 
-    // Called when a zombie is destroyed
+    // Wordt getriggered elke keer een zombie dood gaat
     public void ZombieDestroyed()
     {
         numZombiesDestroyed++;
 
-        // Check if all zombies are destroyed
+        // Checkt of zombies dood zijn
         if (numZombiesDestroyed == numZombiesSpawned)
         {
             spawningWave = false;
