@@ -15,7 +15,8 @@ public class zombieScript : MonoBehaviour
     private bool spawningWave = false;
     private int multiplier = 1;
     private List<GameObject> activeZombies = new List<GameObject>();
-
+    private static zombieScript instance;
+    
     void Start()
     {
         StartCoroutine(SpawnWave());
@@ -74,9 +75,10 @@ public class zombieScript : MonoBehaviour
     public void RemoveZombie(GameObject zombie)
     {
         activeZombies.Remove(zombie);
-       
+        Destroy(zombie);
     }
 
+   
     /*
     public void RemoveSpecialZombie(GameObject specialZombie)
     {
