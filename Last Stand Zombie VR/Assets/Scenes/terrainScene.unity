@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.040727828, g: 0.050560154, b: 0.08324663, a: 1}
+  m_IndirectSpecularColor: {r: 0.040718533, g: 0.050545722, b: 0.08324719, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -939,12 +939,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 176963563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41863392eaadf41a7bab9666e17edbec, type: 3}
+  m_Script: {fileID: 11500000, guid: ae4ad5ce6d7c60d418b0ab2c7be01d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  sensitivity: 4
-  drag: 5
+  sensitivity: 2
+  drag: 0
 --- !u!136 &176963566
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2547,6 +2547,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 398214159}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &448770836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448770837}
+  - component: {fileID: 448770838}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448770837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448770836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 813.58, y: 0, z: 890.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &448770838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448770836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5887a232b51cd8a42a69703884b0e8e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombiePrefab: {fileID: 1605370668701570854, guid: ebf1e48b07e81104497c212da5f3432a,
+    type: 3}
+  specialZombie: {fileID: 0}
+  baseNumZombiesPerWave: 1
+  baseNumSpecialZombiesPerWave: 1
+  spawnRadius: 10
+  timeBetweenWaves: 5
 --- !u!1001 &453594101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6935,6 +6986,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1450963832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1487965113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1487965115}
+  - component: {fileID: 1487965114}
+  m_Layer: 0
+  m_Name: Spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1487965114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487965113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5887a232b51cd8a42a69703884b0e8e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombiePrefab: {fileID: 1605370668701570854, guid: ebf1e48b07e81104497c212da5f3432a,
+    type: 3}
+  specialZombie: {fileID: 0}
+  baseNumZombiesPerWave: 1
+  baseNumSpecialZombiesPerWave: 1
+  spawnRadius: 10
+  timeBetweenWaves: 5
+--- !u!4 &1487965115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487965113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 813.18, y: 0, z: 888.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1494042577
 PrefabInstance:
   m_ObjectHideFlags: 0
