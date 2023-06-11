@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class zombieScript : MonoBehaviour
+public class zombieScript2 : MonoBehaviour
 {
     public GameObject zombiePrefab;
     public GameObject specialZombiePrefab;

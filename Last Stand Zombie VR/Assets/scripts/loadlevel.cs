@@ -9,6 +9,6 @@ public class loadlevel : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("SampleScene"); // Load the specified scene
+        SceneManager.LoadScene("terrainScene"); // Load the specified scene
     }
 }
