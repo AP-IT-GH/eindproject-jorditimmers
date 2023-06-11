@@ -9,7 +9,7 @@ public class ZombieAgent : Agent
     public GameObject target;
     private Vector3 targetPosition;
     private float episodeTime;
-    private float maxEpisodeLength = 1000f; // Maximum episode length
+    private float maxEpisodeLength = 100f; // Maximum episode length
     private float maxMapDistance = Mathf.Sqrt(65*65 + 61*61); // Max distance in the map
 
     void Start()
@@ -34,12 +34,12 @@ public class ZombieAgent : Agent
     }
 
     public override void OnActionReceived(ActionBuffers actions)
-    {
-        // Move the agent
-        var dirToGo = Vector3.zero;
-        var rotateDir = Vector3.zero;
+{
+    // Move the agent
+    var dirToGo = Vector3.zero;
+    var rotateDir = Vector3.zero;
 
-        var action = actions.DiscreteActions[0];
+    var action = actions.DiscreteActions[0];
     switch (action)
     {
         case 0:
@@ -55,32 +55,31 @@ public class ZombieAgent : Agent
             rotateDir = transform.up * -1f;
             break;
     }
-        transform.Rotate(rotateDir, Time.deltaTime * 200f);
-        rBody.AddForce(dirToGo * 2f, ForceMode.VelocityChange);
+    transform.Rotate(rotateDir, Time.deltaTime * 200f);
+    rBody.AddForce(dirToGo * 2f, ForceMode.VelocityChange);
 
-        // Check if the episode has taken too long
-        episodeTime += Time.fixedDeltaTime;
-        if (episodeTime > maxEpisodeLength) 
-        {
-            // Give a negative reward based on distance to player
-            float distanceToPlayer = Vector3.Distance(this.transform.localPosition, targetPosition);
-            AddReward(-0.5f * (distanceToPlayer / maxMapDistance));
-            EndEpisode();
-        }
+    // Update the episode time
+    episodeTime += Time.deltaTime;
+
+    // Check if the episode has taken too long
+    if (episodeTime > maxEpisodeLength) 
+    {
+        EndEpisode();
     }
+}
+
 
     void OnCollisionEnter(Collision collision)
+{
+    // Check if the agent hit a wall
+    if(collision.gameObject.tag == "target")
     {
-        // Check if the agent hit a wall
-        
-        if(collision.gameObject.tag == "target")
-        {
-            // Give a reward based on time taken
-            float timeBonus = (maxEpisodeLength - episodeTime) / maxEpisodeLength;
-            AddReward(2f);
-            EndEpisode();
-        }
+        float scaledReward = Mathf.Max(0.5f, (maxEpisodeLength - episodeTime) / maxEpisodeLength * 2f);
+        AddReward(scaledReward);
+        EndEpisode();
     }
+}
+
 
 
     public override void Heuristic(in ActionBuffers actionsOut)

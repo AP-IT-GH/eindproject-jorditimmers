@@ -1,0 +1,38 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 499922,
+                "file_path": "results\\sensoraangepast1\\ZombieAgent\\ZombieAgent-499922.onnx",
+                "reward": -6.042521824439366,
+                "creation_time": 1686404299.2621899,
+                "auxillary_file_paths": [
+                    "results\\sensoraangepast1\\ZombieAgent\\ZombieAgent-499922.pt"
+                ]
+            },
+            {
+                "steps": 908236,
+                "file_path": "results\\sensoraangepast1\\ZombieAgent\\ZombieAgent-908236.onnx",
+                "reward": 1.9695852994918823,
+                "creation_time": 1686405161.063354,
+                "auxillary_file_paths": [
+                    "results\\sensoraangepast1\\ZombieAgent\\ZombieAgent-908236.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 908236,
+            "file_path": "results\\sensoraangepast1\\ZombieAgent.onnx",
+            "reward": 1.9695852994918823,
+            "creation_time": 1686405161.063354,
+            "auxillary_file_paths": [
+                "results\\sensoraangepast1\\ZombieAgent\\ZombieAgent-908236.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}
