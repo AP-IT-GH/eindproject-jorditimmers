@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1686738250",
+        "python_version": "3.8.16 (default, Mar  2 2023, 03:18:16) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\woutv\\anaconda3\\envs\\myenv\\Scripts\\mlagents-learn config/ZombieConfig.yaml --run-id=testrunMap",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.0+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1686738257"
+    },
+    "total": 7.664910900000001,
+    "count": 1,
+    "self": 0.013437800000001054,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0924497999999998,
+            "count": 1,
+            "self": 0.0924497999999998
+        },
+        "TrainerController.start_learning": {
+            "total": 7.5590233,
+            "count": 1,
+            "self": 0.0003219000000020955,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.558691499999999,
+                    "count": 1,
+                    "self": 7.558691499999999
+                },
+                "trainer_threads": {
+                    "total": 1.0999999986438525e-06,
+                    "count": 1,
+                    "self": 1.0999999986438525e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 8.79999999980896e-06,
+                    "count": 1,
+                    "self": 8.79999999980896e-06
+                }
+            }
+        }
+    }
+}

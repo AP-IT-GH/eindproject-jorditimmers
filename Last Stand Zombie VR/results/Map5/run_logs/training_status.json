@@ -1,0 +1,29 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 53853,
+                "file_path": "results\\Map5\\ZombieAgent\\ZombieAgent-53853.onnx",
+                "reward": null,
+                "creation_time": 1686741554.488633,
+                "auxillary_file_paths": [
+                    "results\\Map5\\ZombieAgent\\ZombieAgent-53853.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 53853,
+            "file_path": "results\\Map5\\ZombieAgent.onnx",
+            "reward": null,
+            "creation_time": 1686741554.488633,
+            "auxillary_file_paths": [
+                "results\\Map5\\ZombieAgent\\ZombieAgent-53853.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}
