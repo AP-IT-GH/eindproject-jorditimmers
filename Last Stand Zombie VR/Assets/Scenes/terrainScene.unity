@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.040745974, g: 0.050543424, b: 0.08338426, a: 1}
+  m_IndirectSpecularColor: {r: 0.039955713, g: 0.050171047, b: 0.083519615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -279,6 +279,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1221965190}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &32976909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 814.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43101525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 895.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534104069603992485, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Parasite L Starkie Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92b8bf5f64cf1ab469186c6ceae683c6, type: 3}
 --- !u!1001 &56704728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -993,7 +1062,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 7111071080452410799, guid: 13f4c3bdc5f432c45807d1f7a922bea1,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -4011,6 +4081,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 616503297}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &624258159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 814.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 898.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154025592168544543, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534104069603992485, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Parasite L Starkie Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92b8bf5f64cf1ab469186c6ceae683c6, type: 3}
 --- !u!1001 &640282176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5258,7 +5397,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 8848131633249631744, guid: d7247498283e0424a88fbf00ab822506,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -5750,7 +5890,7 @@ GameObject:
   - component: {fileID: 921689816}
   m_Layer: 0
   m_Name: XR Origin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8058,38 +8198,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1381234609}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1388541420 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5534104069603992485, guid: 92b8bf5f64cf1ab469186c6ceae683c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1733236808}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1388541424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388541420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332033fc1b9a5ca45a677a4e6a7374de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!64 &1388541425
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388541420}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1445107091153370975, guid: ea496a5ed2f7e1941a8d9882ab6b484e, type: 3}
 --- !u!1001 &1388854338
 PrefabInstance:
   m_ObjectHideFlags: 0
