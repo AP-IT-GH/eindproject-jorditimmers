@@ -1,0 +1,65 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 499972,
+                "file_path": "results\\curriculum1\\ZombieAgent\\ZombieAgent-499972.onnx",
+                "reward": 1.040663719177246,
+                "creation_time": 1686757667.1999564,
+                "auxillary_file_paths": [
+                    "results\\curriculum1\\ZombieAgent\\ZombieAgent-499972.pt"
+                ]
+            },
+            {
+                "steps": 999908,
+                "file_path": "results\\curriculum1\\ZombieAgent\\ZombieAgent-999908.onnx",
+                "reward": 1.6524276988846915,
+                "creation_time": 1686758576.3996575,
+                "auxillary_file_paths": [
+                    "results\\curriculum1\\ZombieAgent\\ZombieAgent-999908.pt"
+                ]
+            },
+            {
+                "steps": 1499980,
+                "file_path": "results\\curriculum1\\ZombieAgent\\ZombieAgent-1499980.onnx",
+                "reward": 1.7137621115235722,
+                "creation_time": 1686759505.5893397,
+                "auxillary_file_paths": [
+                    "results\\curriculum1\\ZombieAgent\\ZombieAgent-1499980.pt"
+                ]
+            },
+            {
+                "steps": 1999940,
+                "file_path": "results\\curriculum1\\ZombieAgent\\ZombieAgent-1999940.onnx",
+                "reward": 1.854666795049395,
+                "creation_time": 1686760421.6927328,
+                "auxillary_file_paths": [
+                    "results\\curriculum1\\ZombieAgent\\ZombieAgent-1999940.pt"
+                ]
+            },
+            {
+                "steps": 2000028,
+                "file_path": "results\\curriculum1\\ZombieAgent\\ZombieAgent-2000028.onnx",
+                "reward": 1.6228334456682205,
+                "creation_time": 1686760421.7528262,
+                "auxillary_file_paths": [
+                    "results\\curriculum1\\ZombieAgent\\ZombieAgent-2000028.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000028,
+            "file_path": "results\\curriculum1\\ZombieAgent.onnx",
+            "reward": 1.6228334456682205,
+            "creation_time": 1686760421.7528262,
+            "auxillary_file_paths": [
+                "results\\curriculum1\\ZombieAgent\\ZombieAgent-2000028.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Last Stand Zombie VR/Assets/scripts/testing.cs.meta
+guid: ae4ad5ce6d7c60d418b0ab2c7be01d10
+========
 guid: 41863392eaadf41a7bab9666e17edbec
+>>>>>>>> 7d5cb759f15b336290a9d00d324ad46bb48a71df:Last Stand Zombie VR/Assets/movement.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
