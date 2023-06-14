@@ -15,6 +15,7 @@ public class zombiehealth : MonoBehaviour
     private float attackCooldown = 7f;
     private float attackTimer = 0f;
     private float attackRange = 2f;
+    
 
     private void Start()
     {
@@ -41,6 +42,9 @@ public class zombiehealth : MonoBehaviour
     }
     private void Update()
     {
+
+      
+
         // Check if the zombie's position is changing
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.01f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.01f)
         {
