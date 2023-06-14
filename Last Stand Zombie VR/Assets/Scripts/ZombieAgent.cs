@@ -9,22 +9,45 @@ public class ZombieAgent : Agent
     public GameObject target;
     private Vector3 targetPosition;
     private float episodeTime;
-    private float maxEpisodeLength = 100f; // Maximum episode length
-    private float maxMapDistance = Mathf.Sqrt(65*65 + 61*61); // Max distance in the map
+    private float maxEpisodeLength = 200f; // Maximum episode length
+    public float maxSpeed = 20f;
 
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
         rBody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        Rigidbody targetRb = target.GetComponent<Rigidbody>();
+        targetRb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
     public override void OnEpisodeBegin()
+{
+    this.transform.localPosition = new Vector3(-39.8f, -1.22f, -27.2f);
+
+    bool validPosition = false;
+    while (!validPosition)
     {
-        this.transform.localPosition = new Vector3(Random.Range(-20, 45), -5.347855f, Random.Range(-16, 45));
-        targetPosition = new Vector3(Random.Range(-20, 45), -5.347855f, Random.Range(-16, 45));
-        target.transform.localPosition = targetPosition;
-        episodeTime = 0f;
+        targetPosition = new Vector3(Random.Range(-88.3f, 6.1f), -1.44f, Random.Range(-24, 15));
+        validPosition = !CheckIfPositionInWall(targetPosition, target.GetComponent<Collider>().bounds.size);
     }
+
+    target.transform.localPosition = targetPosition;
+    episodeTime = 0f;
+}
+
+private bool CheckIfPositionInWall(Vector3 position, Vector3 size)
+{
+    Collider[] hitColliders = Physics.OverlapBox(position, size / 2);
+    foreach (var hitCollider in hitColliders)
+    {
+        if (hitCollider.tag == "wall")
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 
     public override void CollectObservations(VectorSensor sensor)
     {
@@ -79,8 +102,10 @@ public class ZombieAgent : Agent
         EndEpisode();
     }
 }
-
-
+void FixedUpdate()
+{
+    rBody.velocity = Vector3.ClampMagnitude(rBody.velocity, maxSpeed);
+}
 
     public override void Heuristic(in ActionBuffers actionsOut)
 {

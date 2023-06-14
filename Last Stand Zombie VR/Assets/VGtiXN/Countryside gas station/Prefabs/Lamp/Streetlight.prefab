@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8015655954637617995}
   - component: {fileID: 2832921848550818474}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Area Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,9 +106,9 @@ GameObject:
   - component: {fileID: 3945789658775011620}
   - component: {fileID: 1235874709449553390}
   - component: {fileID: 2955476184920399714}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Streetlight
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -206,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2205892328230955029}
   - component: {fileID: 1579177629425907385}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Area Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8919997389292832815}
   - component: {fileID: 795094926720211510}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Area Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 428531198641915234}
   - component: {fileID: 3743319114794646905}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Area Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
