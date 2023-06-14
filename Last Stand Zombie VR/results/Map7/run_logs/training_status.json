@@ -1,0 +1,65 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 499878,
+                "file_path": "results\\Map7\\ZombieAgent\\ZombieAgent-499878.onnx",
+                "reward": 1.8005973100662231,
+                "creation_time": 1686743224.3128712,
+                "auxillary_file_paths": [
+                    "results\\Map7\\ZombieAgent\\ZombieAgent-499878.pt"
+                ]
+            },
+            {
+                "steps": 999910,
+                "file_path": "results\\Map7\\ZombieAgent\\ZombieAgent-999910.onnx",
+                "reward": 1.278894829750061,
+                "creation_time": 1686744503.7391748,
+                "auxillary_file_paths": [
+                    "results\\Map7\\ZombieAgent\\ZombieAgent-999910.pt"
+                ]
+            },
+            {
+                "steps": 1499976,
+                "file_path": "results\\Map7\\ZombieAgent\\ZombieAgent-1499976.onnx",
+                "reward": 1.0699952443440754,
+                "creation_time": 1686745773.5975413,
+                "auxillary_file_paths": [
+                    "results\\Map7\\ZombieAgent\\ZombieAgent-1499976.pt"
+                ]
+            },
+            {
+                "steps": 1999941,
+                "file_path": "results\\Map7\\ZombieAgent\\ZombieAgent-1999941.onnx",
+                "reward": 1.6007927656173706,
+                "creation_time": 1686746968.1057315,
+                "auxillary_file_paths": [
+                    "results\\Map7\\ZombieAgent\\ZombieAgent-1999941.pt"
+                ]
+            },
+            {
+                "steps": 2453220,
+                "file_path": "results\\Map7\\ZombieAgent\\ZombieAgent-2453220.onnx",
+                "reward": null,
+                "creation_time": 1686748063.3652513,
+                "auxillary_file_paths": [
+                    "results\\Map7\\ZombieAgent\\ZombieAgent-2453220.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2453220,
+            "file_path": "results\\Map7\\ZombieAgent.onnx",
+            "reward": null,
+            "creation_time": 1686748063.3652513,
+            "auxillary_file_paths": [
+                "results\\Map7\\ZombieAgent\\ZombieAgent-2453220.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}

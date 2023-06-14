@@ -1,0 +1,65 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 499977,
+                "file_path": "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-499977.onnx",
+                "reward": null,
+                "creation_time": 1686752097.7771835,
+                "auxillary_file_paths": [
+                    "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-499977.pt"
+                ]
+            },
+            {
+                "steps": 999952,
+                "file_path": "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-999952.onnx",
+                "reward": 0.5582140684127808,
+                "creation_time": 1686752993.059765,
+                "auxillary_file_paths": [
+                    "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-999952.pt"
+                ]
+            },
+            {
+                "steps": 1499970,
+                "file_path": "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-1499970.onnx",
+                "reward": 1.5743921995162964,
+                "creation_time": 1686753893.2570157,
+                "auxillary_file_paths": [
+                    "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-1499970.pt"
+                ]
+            },
+            {
+                "steps": 1999990,
+                "file_path": "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-1999990.onnx",
+                "reward": 0.0,
+                "creation_time": 1686754788.0690668,
+                "auxillary_file_paths": [
+                    "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-1999990.pt"
+                ]
+            },
+            {
+                "steps": 2000118,
+                "file_path": "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-2000118.onnx",
+                "reward": 0.0,
+                "creation_time": 1686754788.1337435,
+                "auxillary_file_paths": [
+                    "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-2000118.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000118,
+            "file_path": "results\\mapaangepastenmaxsnelheid\\ZombieAgent.onnx",
+            "reward": 0.0,
+            "creation_time": 1686754788.1337435,
+            "auxillary_file_paths": [
+                "results\\mapaangepastenmaxsnelheid\\ZombieAgent\\ZombieAgent-2000118.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}
