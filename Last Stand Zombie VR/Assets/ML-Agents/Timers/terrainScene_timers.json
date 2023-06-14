@@ -1,1 +1,74 @@
-{"count":1,"self":52.84632,"total":55.9810978,"children":{"InitializeActuators":{"count":9,"self":0.0009954,"total":0.0009954,"children":null},"InitializeSensors":{"count":9,"self":0.0030009999999999998,"total":0.0030009999999999998,"children":null},"AgentSendState":{"count":2561,"self":2.5824696,"total":2.7744325,"children":{"CollectObservations":{"count":4617,"self":0.0545022,"total":0.0545022,"children":null},"WriteActionMask":{"count":4617,"self":0.0177959,"total":0.0177959,"children":null},"RequestDecision":{"count":4617,"self":0.0396354,"total":0.1196647,"children":{"RayPerceptionSensor.Perceive":{"count":4617,"self":0.0800293,"total":0.0800293,"children":null}}}}},"DecideAction":{"count":2561,"self":0.07985239999999999,"total":0.07985239999999999,"children":null},"AgentAct":{"count":2561,"self":0.2734915,"total":0.2734915,"children":null}},"gauges":{},"metadata":{"timer_format_version":"0.1.0","start_time_seconds":"1686774456","unity_version":"2021.3.18f1","command_line_arguments":"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.18f1\\Editor\\Unity.exe -projectpath C:\\jaar2\\VR-experience\\Vr-Project\\eindproject-jorditimmers\\Last Stand Zombie VR -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-gamea -hubSessionId d7940c20-0ae0-11ee-8c78-e156c895233b -accessToken 4g474XU-jnO8DhUa47HdiRNB84x-wMDc81idnVWiOfc001f","communication_protocol_version":"1.5.0","com.unity.ml-agents_version":"2.0.1","scene_name":"terrainScene","end_time_seconds":"1686774512"}}
+{
+  "count": 1,
+  "self": 52.84632,
+  "total": 55.9810978,
+  "children": {
+    "InitializeActuators": {
+      "count": 9,
+      "self": 0.0009954,
+      "total": 0.0009954,
+      "children": null
+    },
+    "InitializeSensors": {
+      "count": 9,
+      "self": 0.0030009999999999998,
+      "total": 0.0030009999999999998,
+      "children": null
+    },
+    "AgentSendState": {
+      "count": 2561,
+      "self": 2.5824696,
+      "total": 2.7744325,
+      "children": {
+        "CollectObservations": {
+          "count": 4617,
+          "self": 0.0545022,
+          "total": 0.0545022,
+          "children": null
+        },
+        "WriteActionMask": {
+          "count": 4617,
+          "self": 0.0177959,
+          "total": 0.0177959,
+          "children": null
+        },
+        "RequestDecision": {
+          "count": 4617,
+          "self": 0.0396354,
+          "total": 0.1196647,
+          "children": {
+            "RayPerceptionSensor.Perceive": {
+              "count": 4617,
+              "self": 0.0800293,
+              "total": 0.0800293,
+              "children": null
+            }
+          }
+        }
+      }
+    },
+    "DecideAction": {
+      "count": 2561,
+      "self": 0.07985239999999999,
+      "total": 0.07985239999999999,
+      "children": null
+    },
+    "AgentAct": {
+      "count": 2561,
+      "self": 0.2734915,
+      "total": 0.2734915,
+      "children": null
+    }
+  },
+  "gauges": {},
+  "metadata": {
+    "timer_format_version": "0.1.0",
+    "start_time_seconds": "1686774456",
+    "unity_version": "2021.3.18f1",
+    "command_line_arguments": "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.18f1\\Editor\\Unity.exe -projectpath C:\\jaar2\\VR-experience\\Vr-Project\\eindproject-jorditimmers\\Last Stand Zombie VR -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-gamea -hubSessionId d7940c20-0ae0-11ee-8c78-e156c895233b -accessToken 4g474XU-jnO8DhUa47HdiRNB84x-wMDc81idnVWiOfc001f",
+    "communication_protocol_version": "1.5.0",
+    "com.unity.ml-agents_version": "2.0.1",
+    "scene_name": "terrainScene",
+    "end_time_seconds": "1686774512"
+  }
+}
