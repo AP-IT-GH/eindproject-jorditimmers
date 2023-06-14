@@ -5,19 +5,19 @@ using UnityEngine;
 public class zombieScript : MonoBehaviour
 {
     public GameObject zombiePrefab;
-    public GameObject specialZombiePrefab;
+   
     public float spawnRadius = 10f;
     public float timeBetweenWaves = 5f;
     public int wavesToDisableSpawner = 3;
     public int startSpawnerAfterWave = 1;
     public int[] zombiesPerWave = { 1, 2, 4, 8, 16 };
-    public int[] specialZombiesPerWave = { 1, 1, 2, 2, 3 };
+    
 
     private int waveNumber = 0;
     private bool spawningWave = false;
     private int multiplier = 1;
     private List<GameObject> activeZombies = new List<GameObject>();
-    private List<GameObject> activeSpecialZombies = new List<GameObject>();
+    
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class zombieScript : MonoBehaviour
 
     void Update()
     {
-        if (waveNumber >= startSpawnerAfterWave && !spawningWave && AllZombiesDestroyed() && AllSpecialZombiesDestroyed())
+        if (waveNumber >= startSpawnerAfterWave && !spawningWave && AllZombiesDestroyed() )
         {
             StartCoroutine(SpawnWave());
         }
@@ -44,7 +44,7 @@ public class zombieScript : MonoBehaviour
         }
 
         int numZombiesPerWave = GetNumZombiesPerWave(waveNumber);
-        int numSpecialZombiesPerWave = GetNumSpecialZombiesPerWave(waveNumber);
+        
 
         if (numZombiesPerWave > 0 && zombiePrefab != null)
         {
@@ -57,18 +57,9 @@ public class zombieScript : MonoBehaviour
             }
         }
 
-        if (numSpecialZombiesPerWave > 0 && specialZombiePrefab != null)
-        {
-            for (int i = 0; i < numSpecialZombiesPerWave; i++)
-            {
-                Vector3 spawnPos = GetSpawnPosition();
-                GameObject newSpecialZombie = Instantiate(specialZombiePrefab, spawnPos, Quaternion.identity);
-                activeSpecialZombies.Add(newSpecialZombie);
-                yield return new WaitForSeconds(0.5f);
-            }
-        }
+        
 
-        while (!AllZombiesDestroyed() || !AllSpecialZombiesDestroyed())
+        while (!AllZombiesDestroyed())
         {
             yield return null;
         }
@@ -91,22 +82,14 @@ public class zombieScript : MonoBehaviour
         Destroy(zombie);
     }
 
-    public void RemoveSpecialZombie(GameObject specialZombie)
-    {
-        activeSpecialZombies.Remove(specialZombie);
-        Destroy(specialZombie);
-    }
+   
 
     private bool AllZombiesDestroyed()
     {
         return activeZombies.Count == 0;
     }
 
-    private bool AllSpecialZombiesDestroyed()
-    {
-        return activeSpecialZombies.Count == 0;
-    }
-
+    
     private int GetNumZombiesPerWave(int waveIndex)
     {
         int index = waveIndex - startSpawnerAfterWave;
@@ -117,15 +100,7 @@ public class zombieScript : MonoBehaviour
         return 0;
     }
 
-    private int GetNumSpecialZombiesPerWave(int waveIndex)
-    {
-        int index = waveIndex - startSpawnerAfterWave;
-        if (index >= 0 && index < specialZombiesPerWave.Length)
-        {
-            return specialZombiesPerWave[index];
-        }
-        return 0;
-    }
+   
 
     private Vector3 GetSpawnPosition()
     {
