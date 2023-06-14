@@ -20,6 +20,8 @@ public class zombiehealth : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         player = GameObject.FindWithTag("Player");
+        animator.SetBool("isWalking", true);
+        animator.SetBool("isRunning", true);
 
     }
 
@@ -28,6 +30,7 @@ public class zombiehealth : MonoBehaviour
     {
         hitCount++;
         animator.SetTrigger("takeHitTrigger");
+        Debug.Log("hit");
         if (hitCount >= 3)
         {
 

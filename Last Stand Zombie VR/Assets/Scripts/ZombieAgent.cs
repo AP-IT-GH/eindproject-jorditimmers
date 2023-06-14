@@ -22,7 +22,7 @@ public class ZombieAgent : Agent
 
     public override void OnEpisodeBegin()
 {
-    this.transform.localPosition = new Vector3(-39.8f, -1.22f, -27.2f);
+    this.transform.localPosition = new Vector3(-56.92f, -1.22f, 17.2f);
 
     bool validPosition = false;
     while (!validPosition)
