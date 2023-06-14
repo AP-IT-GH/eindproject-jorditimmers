@@ -6,6 +6,7 @@ TagManager:
   tags:
   - target
   - wall
+  - bullet
   layers:
   - Default
   - TransparentFX
