@@ -1,0 +1,65 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 499917,
+                "file_path": "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-499917.onnx",
+                "reward": 1.8827325503031414,
+                "creation_time": 1686406458.2114077,
+                "auxillary_file_paths": [
+                    "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-499917.pt"
+                ]
+            },
+            {
+                "steps": 999928,
+                "file_path": "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-999928.onnx",
+                "reward": 1.773152960671319,
+                "creation_time": 1686407380.3165922,
+                "auxillary_file_paths": [
+                    "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-999928.pt"
+                ]
+            },
+            {
+                "steps": 1499933,
+                "file_path": "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-1499933.onnx",
+                "reward": 1.7767149036129315,
+                "creation_time": 1686408357.474522,
+                "auxillary_file_paths": [
+                    "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-1499933.pt"
+                ]
+            },
+            {
+                "steps": 1999919,
+                "file_path": "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-1999919.onnx",
+                "reward": 1.8316430383258395,
+                "creation_time": 1686409372.4077034,
+                "auxillary_file_paths": [
+                    "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-1999919.pt"
+                ]
+            },
+            {
+                "steps": 2064469,
+                "file_path": "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-2064469.onnx",
+                "reward": null,
+                "creation_time": 1686409506.2673864,
+                "auxillary_file_paths": [
+                    "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-2064469.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2064469,
+            "file_path": "results\\sensorenscriptaangepast\\ZombieAgent.onnx",
+            "reward": null,
+            "creation_time": 1686409506.2673864,
+            "auxillary_file_paths": [
+                "results\\sensorenscriptaangepast\\ZombieAgent\\ZombieAgent-2064469.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "ZombieAgent": {
+        "checkpoints": [
+            {
+                "steps": 499978,
+                "file_path": "results\\nieuw1\\ZombieAgent\\ZombieAgent-499978.onnx",
+                "reward": 1.7302164435386658,
+                "creation_time": 1684869556.2048204,
+                "auxillary_file_paths": [
+                    "results\\nieuw1\\ZombieAgent\\ZombieAgent-499978.pt"
+                ]
+            },
+            {
+                "steps": 999949,
+                "file_path": "results\\nieuw1\\ZombieAgent\\ZombieAgent-999949.onnx",
+                "reward": 1.0329178869724274,
+                "creation_time": 1684870475.6074455,
+                "auxillary_file_paths": [
+                    "results\\nieuw1\\ZombieAgent\\ZombieAgent-999949.pt"
+                ]
+            },
+            {
+                "steps": 1499977,
+                "file_path": "results\\nieuw1\\ZombieAgent\\ZombieAgent-1499977.onnx",
+                "reward": 1.9637434147298336,
+                "creation_time": 1684871425.427803,
+                "auxillary_file_paths": [
+                    "results\\nieuw1\\ZombieAgent\\ZombieAgent-1499977.pt"
+                ]
+            },
+            {
+                "steps": 1999953,
+                "file_path": "results\\nieuw1\\ZombieAgent\\ZombieAgent-1999953.onnx",
+                "reward": 1.903075858950615,
+                "creation_time": 1684872379.5506456,
+                "auxillary_file_paths": [
+                    "results\\nieuw1\\ZombieAgent\\ZombieAgent-1999953.pt"
+                ]
+            },
+            {
+                "steps": 2087591,
+                "file_path": "results\\nieuw1\\ZombieAgent\\ZombieAgent-2087591.onnx",
+                "reward": 1.4121428839862347,
+                "creation_time": 1684872630.6420865,
+                "auxillary_file_paths": [
+                    "results\\nieuw1\\ZombieAgent\\ZombieAgent-2087591.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2087591,
+            "file_path": "results\\nieuw1\\ZombieAgent.onnx",
+            "reward": 1.4121428839862347,
+            "creation_time": 1684872630.6420865,
+            "auxillary_file_paths": [
+                "results\\nieuw1\\ZombieAgent\\ZombieAgent-2087591.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}
