@@ -366,11 +366,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: Open XR Package Settings
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  Keys: 0100000007000000
+  Values:
+  - {fileID: -6972551045068313342}
+  - {fileID: 3012718103197173506}
+=======
+  Keys: 010000000d000000
+  Values:
+  - {fileID: -6972551045068313342}
+  - {fileID: 1976134572836344668}
+>>>>>>> 0f025105919e2b6fb7212ca5c502aa036343921c
+=======
   Keys: 010000000d00000007000000
   Values:
   - {fileID: -6972551045068313342}
   - {fileID: 1976134572836344668}
   - {fileID: -8375956006821764279}
+>>>>>>> 217d73f056a49c50415542ad6712bd1ea90b4716
 --- !u!114 &154189092879288027
 MonoBehaviour:
   m_ObjectHideFlags: 0
