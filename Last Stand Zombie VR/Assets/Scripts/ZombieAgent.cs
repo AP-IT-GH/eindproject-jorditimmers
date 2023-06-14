@@ -22,41 +22,31 @@ public class ZombieAgent : Agent
 
     public override void OnEpisodeBegin()
 {
-    this.transform.localPosition = new Vector3(-56.55f, -1.9f, 17.55f);
+    this.transform.localPosition = new Vector3(-39.8f, -1.22f, -27.2f);
 
     bool validPosition = false;
     while (!validPosition)
     {
-        targetPosition = new Vector3(Random.Range(-88f, -43f), -1.44f, Random.Range(-27, 19f));
-        validPosition = CheckIfValidPosition(targetPosition, target.transform.localScale);
+        targetPosition = new Vector3(Random.Range(-88.3f, 6.1f), -1.44f, Random.Range(-24, 15));
+        validPosition = !CheckIfPositionInWall(targetPosition, target.GetComponent<Collider>().bounds.size);
     }
 
     target.transform.localPosition = targetPosition;
     episodeTime = 0f;
 }
 
-private bool CheckIfValidPosition(Vector3 position, Vector3 size)
+private bool CheckIfPositionInWall(Vector3 position, Vector3 size)
 {
-    // Increase the size of the box by the desired margin
-    Vector3 expandedSize = size + Vector3.one/2;
-
-    // Check if the position is inside another object
-    Collider[] colliders = Physics.OverlapBox(position, expandedSize / 2);
-    if (colliders.Length == 0)
+    Collider[] hitColliders = Physics.OverlapBox(position, size / 2);
+    foreach (var hitCollider in hitColliders)
     {
-        // The position is valid if there are no colliders in the box
-        return true;
+        if (hitCollider.tag == "wall")
+        {
+            return true;
+        }
     }
-    else
-    {
-        return false;
-    }
+    return false;
 }
-
-
-
-
-
 
 
     public override void CollectObservations(VectorSensor sensor)
