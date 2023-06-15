@@ -22,7 +22,7 @@ public class ZombieAgent : Agent
 
     public override void OnEpisodeBegin()
 {
-    this.transform.localPosition = new Vector3(-39.8f, -1.22f, -27.2f);
+    this.transform.localPosition = new Vector3(-56.92f, -1.22f, 17.2f);
 
     bool validPosition = false;
     while (!validPosition)
@@ -85,10 +85,10 @@ private bool CheckIfPositionInWall(Vector3 position, Vector3 size)
     episodeTime += Time.deltaTime;
 
     // Check if the episode has taken too long
-    if (episodeTime > maxEpisodeLength) 
+    /*if (episodeTime > maxEpisodeLength) 
     {
         EndEpisode();
-    }
+    }*/
 }
 
 
@@ -99,7 +99,7 @@ private bool CheckIfPositionInWall(Vector3 position, Vector3 size)
     {
         float scaledReward = Mathf.Max(0.5f, (maxEpisodeLength - episodeTime) / maxEpisodeLength * 2f);
         AddReward(scaledReward);
-        EndEpisode();
+        //EndEpisode();
     }
 }
 void FixedUpdate()
