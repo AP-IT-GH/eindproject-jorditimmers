@@ -85,10 +85,10 @@ private bool CheckIfPositionInWall(Vector3 position, Vector3 size)
     episodeTime += Time.deltaTime;
 
     // Check if the episode has taken too long
-    if (episodeTime > maxEpisodeLength) 
+    /*if (episodeTime > maxEpisodeLength) 
     {
         EndEpisode();
-    }
+    }*/
 }
 
 
@@ -99,7 +99,7 @@ private bool CheckIfPositionInWall(Vector3 position, Vector3 size)
     {
         float scaledReward = Mathf.Max(0.5f, (maxEpisodeLength - episodeTime) / maxEpisodeLength * 2f);
         AddReward(scaledReward);
-        EndEpisode();
+        //EndEpisode();
     }
 }
 void FixedUpdate()
